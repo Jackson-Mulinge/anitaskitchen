@@ -1,0 +1,354 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 100px auto;
+    background-image: url(/assets/backgrounds/landing.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 450px;
+    color: rgb(255, 254, 254);
+    margin: 0;
+}
+header>p{
+    width: 230px;
+    text-align: center;
+
+    font-size: 1.1rem;
+    word-spacing: 5px;
+}
+
+.menu{
+    display: grid;
+    grid-template-areas: 
+    'happy break lunch dinner'
+    'party break lunch dinner';
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(255, 254, 254);
+    height: 200px;
+}
+
+.menu>p{
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    background-position: center; 
+    background-size: cover;  
+    
+    
+}
+
+.happy{
+    grid-area: happy;
+    text-align: center;
+    padding: 20px 50px;
+    color: rgb(93, 103, 111);
+    background-color: rgb(214, 216, 218);
+    display: flex;
+    align-items: center;
+    
+}
+
+.party{
+    grid-area: party;
+    text-align: center;
+    padding: 20px 50px;
+    background-color: #F15A29;
+    display: flex;
+    align-items: center;
+}
+.break{
+    grid-area: break;
+    text-align: center;
+    padding: 20px 50px;
+    background-image: url(/assets/foodtop/breakfast.jpg);
+    display: flex;
+    align-items: center;
+}
+.lunch{
+    grid-area: lunch;
+    text-align: center;
+    padding: 20px 50px;
+    background-image: url(/assets/foodtop/dinner2.jpg);
+    opacity: 0.85;
+    display: flex;
+    align-items: center;
+}
+.dinner{
+    grid-area: dinner;
+    text-align: center;
+    padding: 20px 50px;
+    background-image: url(/assets/foodtop/dinner.jpg);
+    display: flex;
+    align-items: center;
+}
+
+.showcases{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin: 50px auto;
+    width: 80%;
+}
+.showcase1>img{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.showcase1{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(93, 103, 111);
+    border-radius: 5px;
+    margin: 0;
+}
+
+.showcase2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 400px;
+}
+
+
+.showcase2>h4{
+ color: rgb(93, 103, 111);
+}
+.showcase2>p{
+ color: rgb(93, 103, 111);
+}
+.showcase2>a{
+ color: #F15A29;
+ padding: 5px 15px;
+ border: 1px solid #F15A29;
+ border-radius: 3px;
+ text-decoration: none;
+ 
+}
+.showcase3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 400px;
+    text-align: right;
+}
+
+
+.showcase3>h4{
+ color: rgb(93, 103, 111);
+ 
+}
+.showcase3>p{
+ color: rgb(93, 103, 111);
+ 
+}
+.showcase3>a{
+ color: #F15A29;
+ padding: 5px 15px;
+ border: 1px solid #F15A29;
+ border-radius: 3px;
+ text-decoration: none;
+ 
+}
+
+.showcase4>img{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.showcase4{
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(93, 103, 111);
+    border-radius: 5px;
+    margin: 0;
+}
+
+.collections{
+    background-image: url(/assets/backgrounds/foodsBg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    margin: 50px auto;
+    padding: 80px;
+}
+
+ .foodmenu{ 
+    background-color: rgb(255, 254, 254);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+ .foodnav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    
+    
+}
+
+.foodnav>a:nth-child(1){
+    color: #F15A29;
+    background-color: rgb(255, 254, 254);
+    
+}
+
+
+
+.foodnav>a{
+    padding: 20px 50px;
+    text-decoration: none;
+    background-color: rgb(198, 200, 202);
+    color: rgb(71, 74, 76);
+    } 
+
+.foodimg{
+    display: flex;
+    gap: 20px;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 20px;
+    gap: 10px;
+}
+
+.wrap>img{
+    width: 250px;
+}
+
+.wrap>small{
+    color: #F15A29;
+}
+
+.customers{
+    width: 60%;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px 1px rgb(162, 172, 180);
+    border-radius: 5px;
+
+    display: flex;
+    gap: 20px;
+}
+
+.customer{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.customer>h2{
+    color: #F15A29;
+    font-size: 1rem;
+}
+
+.customer>h4{
+    color: rgb(93, 103, 111);
+    font-size: .85rem;
+}
+.customer>p{
+    color: rgb(93, 103, 111);
+    font-size: .8rem;
+}
+
+.about{
+    text-align: center;
+    width: 300px;
+    padding: 20px ;
+
+}
+.about>h2{
+    color: #F15A29;
+    font-size: 1rem;
+}
+.about>p{
+    color: rgb(93, 103, 111);
+    font-size: .8rem;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.above{
+    background-image: url(/assets/backgrounds/subscribe.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 50px 100px;
+
+}
+
+.above>h2{
+    color: rgb(255, 254, 254);
+    font-size: 1.2rem;
+}
+
+input{
+    opacity: .5;
+    padding: 10px 30px;
+    color: rgb(212, 209, 209);
+}
+input::placeholder{
+    
+    color: rgb(187, 178, 178);
+}
+
+.inputs>button{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(255, 254, 254);
+    background-color: #F15A29;
+}
+
+.below{
+    padding: 20px 50px;
+    background-color: #F15A29;
+}
+
+.footerlogo{
+    margin: 0 auto;
+    width: 150px;
+}
+
+.footerlogo>img{
+    float: left;
+    width: 40px;
+}
+
+.footerlogo>h2{
+    padding: 10px;
+    color: rgb(255, 254, 254);
+    margin-bottom: 0;
+}
+.below>h4{
+    color: rgb(255, 254, 254);
+    font-size: .75rem;
+    margin: 0;
+    padding: 0;
+}
+
+.logos>img{
+    padding: 10px;
+}
